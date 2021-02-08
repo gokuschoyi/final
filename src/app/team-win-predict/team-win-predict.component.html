@@ -1,0 +1,11 @@
+<div *ngIf="!teamsService.selectedTeam; else grid" class="text-center m-5">
+  No Team Selected.
+</div>
+<ng-template #grid>
+  <a routerLink="../dashboard">Goto Dashboard</a>
+  <div class="mt-5">
+    <p>Total Games Played : {{ totalNumberOfGames }}</p>
+    <p>Total Wins : {{ totalGameWins }}</p>
+    <p>Prediction : {{ message }}</p>
+  </div>
+</ng-template>

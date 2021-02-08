@@ -1,0 +1,20 @@
+<div>
+  <div>
+    <div class="row">
+      <div class="pt-5 m-auto">
+        <!-- <ul class="list-group"> -->
+          <!-- <li class="list-group-item active">Cras justo odio</li> -->
+          <!-- <li class="list-group-item" *ngFor="let team of teams">
+            {{ team?.name }}
+          </li>
+        </ul> -->
+
+        <div class="w-60" >
+            <div *ngFor="let team of teams;let i=index" class="grid-item" (click)="teamClicked(i)">
+                {{ team.name }}
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

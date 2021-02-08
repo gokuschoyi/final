@@ -1,0 +1,14 @@
+.grid-item {
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin:10px;
+}
+
+.four-column-grid {
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.w-60 {
+    width: 60vw;
+}

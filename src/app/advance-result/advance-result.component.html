@@ -1,0 +1,14 @@
+<div *ngIf="!teamsService.selectedTeam; else grid" class="text-center m-5">
+    No Team Selected.
+</div>
+<ng-template #grid>
+  <a routerLink="../dashboard">Goto Dashboard</a>
+
+  <!-- <ag-grid-angular
+    style="width: 100%; height: 500px; margin: 10px"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+  >
+  </ag-grid-angular> -->
+</ng-template>
